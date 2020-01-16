@@ -86,7 +86,7 @@
 
                 <div class="links">
                     <a href="https://www.engie.com/en">ENGIE</a>
-                    <a href="https://github.com/laravel/laravel">GitHub del Proyecto</a>
+                    <a href="https://github.com/didiermorantes/gestionOTEngie.git">GitHub del Proyecto</a>
                 </div>
             </div>
         </div>

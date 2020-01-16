@@ -1981,6 +1981,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Componente menu montado.');
@@ -37457,10 +37465,46 @@ var staticRenderFns = [
         _c(
           "a",
           {
+            staticClass: "btn btn-success btn-block",
+            attrs: { href: "./formCargarTrabajadores" }
+          },
+          [_vm._v("CargarTrabajadores Masivo")]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
             staticClass: "btn btn-warning btn-block",
             attrs: { href: "./orden" }
           },
-          [_vm._v("Gestionar Ordenes")]
+          [_vm._v("Gestionar Órdenes")]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "btn btn-success btn-block",
+            attrs: { href: "./formCargarOrdenes" }
+          },
+          [_vm._v("CargarOrdenes Masivo")]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "btn btn-warning btn-block",
+            attrs: { href: "./asignacion" }
+          },
+          [_vm._v("Asignar Órdenes Pendientes")]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "btn btn-warning btn-block",
+            attrs: { href: "./reporte" }
+          },
+          [_vm._v("Reporte de Órdenes Ejecutadas ")]
         )
       ])
     ])

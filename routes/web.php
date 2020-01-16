@@ -39,6 +39,20 @@ Route::post('/agregarOrden', 'OrdenController@store')->name('agregarOrden');
 Route::delete('/eliminarOrden/{id}','OrdenController@destroy')->name('eliminarOrden');
 
 
+
+Route::get('/asignacion', 'AsignacionController@index')->name('asignacion');
+Route::get('/editarOrdenAsignacion/{id}', 'AsignacionController@edit')->name('editarOrdenAsignacion');
+Route::put('/updateOrdenAsignacion/{id}', 'AsignacionController@update')->name('updateOrdenAsignacion');
+
+
+Route::get('/reporte', 'ReporteController@index')->name('reporte');
+
+Route::get('/formCargarOrdenes', 'ExcelController@index')->name('formCargarOrdenes');
+Route::post('/cargarOrdenes', 'ExcelController@importOrdenes')->name('cargarOrdenes');
+Route::get('/formCargarTrabajadores', 'ExcelController@trabajadores')->name('formCargarTrabajadores');
+Route::post('/cargarTrabajadores', 'ExcelController@importTrabajadores')->name('cargarTrabajadores');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
